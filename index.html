@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ilyes Borbála macis</title>
 </head>
 <body>
     <form action="#" method="get">
-        <label for="nev"></label>
-        <input type="text" id="nev" name="Bori" >
+        <fieldset>
+            <label for="nev"></label>
+            <input type="name" id="valmi" name="Bori" placeholder="Bearkenye"> <br>
+            <label for="szín">Szin:</label>
+            <input type="color" id="szin" name="maciszin"><br>
+            <label for="tomeg">Tömegy(kg):</label>
+            <input type="range" id="tömeg" name="tömeg" min="6" max="10"><br>
+            <input type="number" name="tomeg_szam" size="3" oninput="this.form.tomeg_szam.value=this.value"> 
+            <input type="number" name="tomeg_szam" size="3" oninput="this.form.tomeg_szam.value=this.value"><br>
+            <input type="submit" value="Küldes"> 
+            <label for=""></label>
+        </fieldset>
 
     </form>
 </body>
